@@ -14,6 +14,8 @@ import com.google.android.material.chip.Chip
 import com.google.android.material.textfield.TextInputEditText
 import java.util.jar.Manifest
 
+//Put your phone in line 70
+
 class MainActivity : AppCompatActivity() {
     lateinit var nomInput: TextInputEditText
     lateinit var prenomInput: TextInputEditText
@@ -64,7 +66,8 @@ class MainActivity : AppCompatActivity() {
                         "Adresse : ${adresseInput.text.toString()} \n" +
                         "Taille : ${taillePizza()} \n" +
                         "Ingredients : ${ingredientsPizza()}"
-                sendMessage("+21629083532", message)
+                //Put your phone number here
+                sendMessage("+216???", message)
 
                 val toast = Toast.makeText(applicationContext, "Commande envoyée", Toast.LENGTH_LONG)
                 toast.show()
